@@ -26,6 +26,9 @@
                 <code>
                     -i, --ignore-case          Ignora mayúsculas y minúsculas
                     
+                    -l, --files-with-matches         Muestra el nombre de cada fichero de entrada que produciría alguna salida.
+                                                     La búsqueda se detendrá en la primera concordancia.
+
                     -(opcion2), --(nombre completo)         (Descrioción de lo que hace la opcion2)
                 </code>
             </pre>
@@ -34,13 +37,17 @@
                 <code>
                     grep "prof*" archivo.txt          Busca el patrón "prof*" en el archivo llamado "archivo.txt"
 
-                    grep -i "patrón" archivo.txt      En este ejemplo, grep buscará el patrón especificado en el archivo archivo.txt, ignorando si las letras del patrón están en mayúsculas o minúsculas.
-                                                      Esto significa que coincidirá con todas las ocurrencias del patrón, independientemente de su caso. Por ejemplo, si el archivo contiene líneas con 
+                    grep -i "patrón" archivo.txt      En este ejemplo, grep buscará el patrón especificado en el archivo archivo.txt, 
+                                                      ignorando si las letras del patrón están en mayúsculas o minúsculas.
+                                                      Esto significa que coincidirá con todas las ocurrencias del patrón,
+                                                      independientemente de su caso. Por ejemplo, si el archivo contiene líneas con 
                                                       "Patrón", "patrón" o "PAtRóN", todas serán consideradas como coincidencias.
 
-                    (ejemplo de uso del comando con y sin las opciones)    (Breve explicación de lo que hace el ejemplo)
-                    
-                    ejemplo de uso del comando con y sin las opciones
+                    grep -l "palabra" *.txt           Busca la palabra "palabra" en todos los archivos de texto en el directorio actual (*.txt) y
+                                                      muestra solo los nombres de los archivos que contienen esa palabra,
+                                                      sin mostrar las líneas específicas que coinciden.
+
+                
                 </code>
             </pre>
         </section>
