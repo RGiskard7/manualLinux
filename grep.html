@@ -29,6 +29,8 @@
                     -l, --files-with-matches        Muestra el nombre de cada fichero de entrada que produciría alguna salida.
                                                     La búsqueda se detendrá en la primera concordancia.
 
+                    -c, --count                     Cuenta las lineas en las que aparezca el patron establecido
+
                     -(opcion2), --(nombre completo)         (Descrioción de lo que hace la opcion2)
                 </code>
             </pre>
@@ -46,6 +48,9 @@
                     grep -l "palabra" *.txt             Busca la palabra "palabra" en todos los archivos de texto en el directorio actual 
                                                         (*.txt) y muestra solo los nombres de los archivos que contienen esa palabra,
                                                         sin mostrar las líneas específicas que coinciden.
+
+                    grep -c "hola" saludo.txt           Cuenta el número de Líneas de archivo saludo.txt, de las cuales, contengan el
+                                                        patron "hola".
 
                     (ejemplo de uso del comando con y sin las opciones)         (Breve explicación de lo que hace el ejemplo)
                 </code>
