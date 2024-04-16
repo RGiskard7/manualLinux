@@ -29,7 +29,7 @@
                     -l, --files-with-matches        Muestra el nombre de cada fichero de entrada que produciría alguna salida.
                                                     La búsqueda se detendrá en la primera concordancia.
 
-                    -(opcion2), --(nombre completo)         (Descrioción de lo que hace la opcion2)
+                    -r --recursive                  Se utiliza para buscar de forma recursiva en los directorios y subdirectorios.
                 </code>
             </pre>
             <h2 class="section-heading">Ejemplos de uso:</h2>
@@ -47,7 +47,8 @@
                                                         (*.txt) y muestra solo los nombres de los archivos que contienen esa palabra,
                                                         sin mostrar las líneas específicas que coinciden.
 
-                    (ejemplo de uso del comando con y sin las opciones)         (Breve explicación de lo que hace el ejemplo)
+                    grep -r “importante” Documentos/	El comando busca en la carpeta “Documentos” y mostrará las líneas de los archivos de 
+                                                        texto que contenga la palabra “importante” dentro de dicha carpeta y sus subcarpetas.
                 </code>
             </pre>
         </section>
