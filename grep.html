@@ -28,6 +28,7 @@
                     
                     -l, --files-with-matches        Muestra el nombre de cada fichero de entrada que produciría alguna salida.
                                                     La búsqueda se detendrá en la primera concordancia.
+                    -c, --count                     Cuenta las lineas en las que aparezca el patron establecido
 
                     -r --recursive                  Se utiliza para buscar de forma recursiva en los directorios y subdirectorios.
                 </code>
@@ -46,6 +47,9 @@
                     grep -l "palabra" *.txt             Busca la palabra "palabra" en todos los archivos de texto en el directorio actual 
                                                         (*.txt) y muestra solo los nombres de los archivos que contienen esa palabra,
                                                         sin mostrar las líneas específicas que coinciden.
+
+                    grep -c "hola" saludo.txt           Cuenta el número de Líneas de archivo saludo.txt, de las cuales, contengan el
+                                                        patron "hola".
 
                     grep -r “importante” Documentos/	El comando busca en la carpeta “Documentos” y mostrará las líneas de los archivos de 
                                                         texto que contenga la palabra “importante” dentro de dicha carpeta y sus subcarpetas.
